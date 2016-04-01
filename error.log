@@ -1,0 +1,99 @@
+cc -std=gnu11 -I -L -lm -ltiff -lpopt -lsane -lpaper -D__VERSION=0 -D__REVISION=9 -D__RELEASE='"tiffscan 0.9"' -Wall    tiffscan.c   -o tiffscan
+/tmp/ccHzveki.o: In function `sighandler':
+tiffscan.c:(.text+0x54): undefined reference to `sane_cancel'
+/tmp/ccHzveki.o: In function `itoa':
+tiffscan.c:(.text+0x82b): undefined reference to `log10'
+/tmp/ccHzveki.o: In function `dtoa':
+tiffscan.c:(.text+0x8ab): undefined reference to `log10'
+/tmp/ccHzveki.o: In function `add_default_option':
+tiffscan.c:(.text+0x9a7): undefined reference to `sane_control_option'
+/tmp/ccHzveki.o: In function `fetch_options':
+tiffscan.c:(.text+0xbe0): undefined reference to `sane_control_option'
+tiffscan.c:(.text+0xcac): undefined reference to `sane_get_option_descriptor'
+tiffscan.c:(.text+0x1080): undefined reference to `log10'
+/tmp/ccHzveki.o: In function `sane_set_opt_word':
+tiffscan.c:(.text+0x12cd): undefined reference to `sane_get_option_descriptor'
+tiffscan.c:(.text+0x135e): undefined reference to `sane_control_option'
+/tmp/ccHzveki.o: In function `set_option':
+tiffscan.c:(.text+0x1455): undefined reference to `sane_get_option_descriptor'
+tiffscan.c:(.text+0x1557): undefined reference to `sane_control_option'
+tiffscan.c:(.text+0x15c0): undefined reference to `sane_control_option'
+tiffscan.c:(.text+0x15d3): undefined reference to `sane_strstatus'
+/tmp/ccHzveki.o: In function `process_backend_option':
+tiffscan.c:(.text+0x163b): undefined reference to `sane_get_option_descriptor'
+tiffscan.c:(.text+0x16cf): undefined reference to `sane_control_option'
+tiffscan.c:(.text+0x16e2): undefined reference to `sane_strstatus'
+/tmp/ccHzveki.o: In function `embed_icc_profile':
+tiffscan.c:(.text+0x1a94): undefined reference to `TIFFSetField'
+/tmp/ccHzveki.o: In function `tiff_set_user_fields':
+tiffscan.c:(.text+0x1ba5): undefined reference to `TIFFSetField'
+tiffscan.c:(.text+0x1bce): undefined reference to `TIFFSetField'
+tiffscan.c:(.text+0x1bf7): undefined reference to `TIFFSetField'
+tiffscan.c:(.text+0x1c20): undefined reference to `TIFFSetField'
+/tmp/ccHzveki.o:tiffscan.c:(.text+0x1cff): more undefined references to `TIFFSetField' follow
+/tmp/ccHzveki.o: In function `scan_to_tiff':
+tiffscan.c:(.text+0x2320): undefined reference to `sane_start'
+tiffscan.c:(.text+0x2341): undefined reference to `sane_strstatus'
+tiffscan.c:(.text+0x2371): undefined reference to `sane_get_parameters'
+tiffscan.c:(.text+0x2384): undefined reference to `sane_strstatus'
+tiffscan.c:(.text+0x24cc): undefined reference to `sane_read'
+tiffscan.c:(.text+0x24f7): undefined reference to `sane_strstatus'
+tiffscan.c:(.text+0x252b): undefined reference to `TIFFCurrentRow'
+tiffscan.c:(.text+0x25a2): undefined reference to `TIFFSetField'
+tiffscan.c:(.text+0x265d): undefined reference to `TIFFWriteScanline'
+/tmp/ccHzveki.o: In function `get_resolution':
+tiffscan.c:(.text+0x2741): undefined reference to `sane_get_option_descriptor'
+tiffscan.c:(.text+0x279d): undefined reference to `sane_control_option'
+/tmp/ccHzveki.o: In function `tiffscan_exit':
+tiffscan.c:(.text+0x2826): undefined reference to `sane_close'
+tiffscan.c:(.text+0x282b): undefined reference to `sane_exit'
+tiffscan.c:(.text+0x2830): undefined reference to `paperdone'
+/tmp/ccHzveki.o: In function `list_devices':
+tiffscan.c:(.text+0x286f): undefined reference to `sane_get_devices'
+tiffscan.c:(.text+0x2882): undefined reference to `sane_strstatus'
+/tmp/ccHzveki.o: In function `find_suitable_device':
+tiffscan.c:(.text+0x29a8): undefined reference to `sane_get_devices'
+tiffscan.c:(.text+0x29bb): undefined reference to `sane_strstatus'
+/tmp/ccHzveki.o: In function `tiff_open':
+tiffscan.c:(.text+0x2a8b): undefined reference to `TIFFOpen'
+/tmp/ccHzveki.o: In function `tiff2pdf':
+tiffscan.c:(.text+0x2adb): undefined reference to `TIFFFlush'
+tiffscan.c:(.text+0x2ae7): undefined reference to `TIFFFileName'
+tiffscan.c:(.text+0x2b5b): undefined reference to `TIFFFileName'
+tiffscan.c:(.text+0x2c13): undefined reference to `TIFFFileName'
+/tmp/ccHzveki.o: In function `scan':
+tiffscan.c:(.text+0x2fce): undefined reference to `TIFFFileName'
+tiffscan.c:(.text+0x2ff9): undefined reference to `TIFFFileName'
+tiffscan.c:(.text+0x3033): undefined reference to `TIFFWriteDirectory'
+tiffscan.c:(.text+0x3069): undefined reference to `TIFFClose'
+tiffscan.c:(.text+0x30e7): undefined reference to `TIFFNumberOfDirectories'
+tiffscan.c:(.text+0x30f8): undefined reference to `TIFFFileName'
+tiffscan.c:(.text+0x3136): undefined reference to `TIFFClose'
+/tmp/ccHzveki.o: In function `process_cmd_line':
+tiffscan.c:(.text+0x326e): undefined reference to `poptGetNextOpt'
+tiffscan.c:(.text+0x32f0): undefined reference to `poptGetOptArg'
+tiffscan.c:(.text+0x330a): undefined reference to `poptStrerror'
+tiffscan.c:(.text+0x331e): undefined reference to `poptBadOption'
+/tmp/ccHzveki.o: In function `process_backend_options':
+tiffscan.c:(.text+0x3427): undefined reference to `poptGetContext'
+tiffscan.c:(.text+0x3445): undefined reference to `poptGetOptArg'
+tiffscan.c:(.text+0x349c): undefined reference to `poptPrintHelp'
+tiffscan.c:(.text+0x34bd): undefined reference to `poptGetOptArg'
+tiffscan.c:(.text+0x3501): undefined reference to `poptGetNextOpt'
+tiffscan.c:(.text+0x3525): undefined reference to `poptStrerror'
+tiffscan.c:(.text+0x3539): undefined reference to `poptBadOption'
+tiffscan.c:(.text+0x355a): undefined reference to `poptFreeContext'
+/tmp/ccHzveki.o: In function `main':
+tiffscan.c:(.text+0x35b7): undefined reference to `paperinit'
+tiffscan.c:(.text+0x35c8): undefined reference to `sane_init'
+tiffscan.c:(.text+0x35e6): undefined reference to `poptGetContext'
+tiffscan.c:(.text+0x36ad): undefined reference to `poptPrintHelp'
+tiffscan.c:(.text+0x36ee): undefined reference to `sane_open'
+tiffscan.c:(.text+0x3701): undefined reference to `sane_strstatus'
+tiffscan.c:(.text+0x37a9): undefined reference to `paperinfo'
+tiffscan.c:(.text+0x3803): undefined reference to `paperpsheight'
+tiffscan.c:(.text+0x3814): undefined reference to `paperpswidth'
+tiffscan.c:(.text+0x38c7): undefined reference to `sane_strstatus'
+tiffscan.c:(.text+0x38f1): undefined reference to `poptFreeContext'
+collect2: error: ld returned 1 exit status
+<builtin>: recipe for target 'tiffscan' failed
